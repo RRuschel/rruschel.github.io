@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RRuschel's Personal Page</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Personal Webpage</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h1>Welcome to My Personal Page</h1>
-        <p>Hello! I am RRuschel, a PhD student specializing in computer vision and machine learning.</p>
-        <img src="images/website-under-construction-background-vector.jpg" alt="Under Construction">
-    </section>
-    <footer>
-        <p>&copy; 2024 RRuschel. All rights reserved.</p>
-    </footer>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="projects_full.html">Projects</a></li> -->
+        <li><a href="CV.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Raphael Ruschel</h1>
+    <p>Computer Vision Engineer</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm trying to find time to properly design and update this page while I finish my Ph.D. and look for a job.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Latest Projects</h2>
+    <div class="project-list">
+      <article class="project">
+        <h3><a href="tcdsg.html">TCDSG: Temporally Consistent Dynamic Scene-Graph Generation</a></h3>
+        <p>We present TCDSG, an innovative end-to-end framework that detects, tracks, and links subject-object relationships across time, generating action tracklets, temporally consistent sequences of entities and their interactions.</p>
+      </article>
+      <article class="project">
+        <h3><a href="dds.html">DDS: Decoupled Dynamic Scene-Graph Generation Network</a></h3>
+        <p>In this project, we explore how a decoupled network design can improve performance when dealing with compositional scenarios. In this case, compositional means the network has seen parts of a triplet &lt;subject, object, relationship&gt; individually during training and we aim to predict a new combination during testing.</p>
+      </article>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- <p>📧 <a href="mailto:raphaelruschel@gmail.com">raphaelruschel@gmail.com</a></p> -->
+    <p>🔗 <a href="https://www.linkedin.com/in/raphaelruschel/" target="_blank">LinkedIn</a></p>
+    <p>🔗 <a href="https://github.com/RRuschel" target="_blank">GitHub</a></p>
+  </section>
+
+  <!-- <section id="survey">
+    <h2>Contact me</h2>
+
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUKF9lUY1zO9PJTKVLa-gIYqBdl3cCfZ8xyVybOL1StdkR_A/viewform?embedded=true" width="640" height="761" frameborder="0" marginheight="0" marginwidth="0"></iframe> -->
+
+  <footer>
+    <p>&copy; 2025 Raphael Ruschel. All rights reserved.</p>
+  </footer>
 </body>
 </html>
