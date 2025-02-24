@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raphael Ruschel - Personal Webpage</title>
+  <title>Raphael Ruschel - Computer Vision & ML Engineer</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,51 +17,57 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <!-- <li><a href="projects_full.html">Projects</a></li> -->
+        <li><a href="projects_full.html">Projects</a></li>
         <li><a href="CV.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="hero">
     <h1>Raphael Ruschel</h1>
-    <p>Computer Vision Engineer</p>
+    <p>Computer Vision & Machine Learning Engineer</p>
+    <p class="subtitle">Ph.D. Candidate @ UCSB | Specializing in Scalable AI Solutions</p>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I'm trying to find time to properly design and update this page while I finish my Ph.D. and look for a job.</p>
+    <p>I’m a Ph.D. candidate in Electrical & Computer Engineering at UC Santa Barbara, with over 5 years of experience in computer vision and machine learning. My work focuses on building scalable pipelines for activity tracking, dynamic scene-graph generation, and synthetic datasets using tools like Python, PyTorch, Docker, and Unity Engine. I’ve published in top-tier conferences (CVPR, WACV) and am passionate about applying cutting-edge AI to solve real-world challenges in industry.</p>
   </section>
 
   <section id="projects">
-    <h2>Latest Projects</h2>
+    <h2>Selected Projects</h2>
     <div class="project-list">
       <article class="project">
-        <h3><a href="tcdsg.html">TCDSG: Temporally Consistent Dynamic Scene-Graph Generation</a></h3>
-        <p>We present TCDSG, an innovative end-to-end framework that detects, tracks, and links subject-object relationships across time, generating action tracklets, temporally consistent sequences of entities and their interactions.</p>
+        <h3><a href="tcdsg.html">Temporally Consistent Dynamic Scene-Graphs</a></h3>
+        <p>Developed an end-to-end framework for action tracklet generation, doubling temporal recall on benchmark datasets like Action Genome using advanced tracking and linking algorithms.</p>
       </article>
       <article class="project">
-        <h3><a href="dds.html">DDS: Decoupled Dynamic Scene-Graph Generation Network</a></h3>
-        <p>In this project, we explore how a decoupled network design can improve performance when dealing with compositional scenarios. In this case, compositional means the network has seen parts of a triplet &lt;subject, object, relationship&gt; individually during training and we aim to predict a new combination during testing.</p>
+        <h3><a href="dds.html">Decoupled Dynamic Scene-Graph Network</a></h3>
+        <p>Designed a transformer-based pipeline for compositional Human-Object Interaction detection, achieving 400%+ accuracy improvement in unseen scenarios.</p>
       </article>
-      <!-- Add more projects as needed -->
     </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+      <li><strong>Programming:</strong> Python, MATLAB, C++, C#</li>
+      <li><strong>ML & Vision:</strong> PyTorch, scikit-learn, OpenCV</li>
+      <li><strong>Data Science:</strong> Numpy, Pandas, Matplotlib</li>
+      <li><strong>Tools:</strong> Docker, Unity Engine, Git, AWS</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <!-- <p>📧 <a href="mailto:raphaelruschel@gmail.com">raphaelruschel@gmail.com</a></p> -->
-    <p>🔗 <a href="https://www.linkedin.com/in/raphaelruschel/" target="_blank">LinkedIn</a></p>
-    <p>🔗 <a href="https://github.com/RRuschel" target="_blank">GitHub</a></p>
+    <p><strong>Email:</strong> <a href="mailto:raphaelruschel@gmail.com">raphaelruschel@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raphaelruschel/" target="_blank">linkedin.com/in/raphaelruschel</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/RRuschel" target="_blank">github.com/RRuschel</a></p>
   </section>
 
-  <!-- <section id="survey">
-    <h2>Contact me</h2>
-
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUKF9lUY1zO9PJTKVLa-gIYqBdl3cCfZ8xyVybOL1StdkR_A/viewform?embedded=true" width="640" height="761" frameborder="0" marginheight="0" marginwidth="0"></iframe> -->
-
   <footer>
-    <p>&copy; 2025 Raphael Ruschel. All rights reserved.</p>
+    <p>© 2025 Raphael Ruschel. All rights reserved.</p>
   </footer>
 </body>
 </html>
