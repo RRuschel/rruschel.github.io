@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Raphael Ruschel</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">RR</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projects-header">
+    <div class="container">
+      <h1>Research Projects</h1>
+      <p>Explore my contributions to computer vision and machine learning</p>
+    </div>
+  </section>
+
+  <section id="projects-grid">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="vision">Computer Vision</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="data">Data Science</button>
+      </div>
+      
+      <div class="all-projects">
+        <div class="project-card large" data-categories="vision ml">
+          <div class="project-content">
+            <div class="project-badges">
+              <span class="badge featured">Featured</span>
+              <span class="badge">Under review</span>
+            </div>
+            <h3>Temporally Consistent Dynamic Scene Graphs</h3>
+            <p>An end-to-end framework for detecting, tracking, and linking subject-object relationships across video sequences. By enhancing the Hungarian Matching process, this project achieved over 100% improvement in temporal recall on benchmark datasets like Action Genome.</p>
+            <div class="project-tags">
+              <span>Computer Vision</span>
+              <span>Video Analysis</span>
+              <span>PyTorch</span>
+              <span>OpenCV</span>
+            </div>
+            <a href="projects/tcdsg.html" class="project-link">View Project Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card large" data-categories="vision ml">
+          <div class="project-content">
+            <div class="project-badges">
+              <span class="badge featured">Featured</span>
+              <span class="badge">WACV 2025</span>
+            </div>
+            <h3>Decoupled Dynamic Scene-Graph Generation Network</h3>
+            <p>A transformer-based, single-stage pipeline designed to improve Human-Object Interaction (HOI) detection in compositional settings. This project delivered a 400%+ boost in accuracy for unseen scenarios by leveraging temporal data, making it robust and scalable for real-world deployments.</p>
+            <div class="project-tags">
+              <span>Transformers</span>
+              <span>HOI Detection</span>
+              <span>PyTorch</span>
+              <span>Docker</span>
+            </div>
+            <a href="projects/dds.html" class="project-link">View Project Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-categories="vision data">
+          <div class="project-content">
+            <h3>Synthetic Dataset Creation for Activity Detection</h3>
+            <p>Engineered a multi-camera synthetic data generation pipeline using Unity Engine, featuring parametrized human models with skeletal animations and procedural generation algorithms for diverse indoor environments.</p>
+            <div class="project-tags">
+              <span>Unity Engine</span>
+              <span>3D Modeling</span>
+              <span>C#</span>
+            </div>
+            <a href="projects/synthetic-dataset.html" class="project-link">View Project Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-categories="vision ml">
+          <div class="project-content">
+            <div class="project-badges">
+              <span class="badge">IEEE I2MTC 2019</span>
+            </div>
+            <h3>Facial Spoofing Detection</h3>
+            <p>Trained deep learning models with environmental features for face authentication, optimizing performance on NUAA/CASIA datasets and laying groundwork for digital human authenticity verification.</p>
+            <div class="project-tags">
+              <span>Deep Learning</span>
+              <span>PyTorch</span>
+              <span>MATLAB</span>
+            </div>
+            <a href="projects/facial-spoofing.html" class="project-link">View Project Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-categories="vision ml">
+          <div class="project-content">
+            <div class="project-badges">
+              <span class="badge">IEEE EMBS 2018</span>
+            </div>
+            <h3>Automatic Cell Damage Recognition</h3>
+            <p>Developed an image processing pipeline for Single Cell Gel Electrophoresis assays using neural networks, reducing analysis time by over 90% while maintaining high accuracy.</p>
+            <div class="project-tags">
+              <span>Image Processing</span>
+              <span>Neural Networks</span>
+              <span>Python</span>
+              <span>OpenCV</span>
+            </div>
+            <a href="projects/cell-damage.html" class="project-link">View Project Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-categories="vision data">
+          <div class="project-content">
+            <div class="project-badges">
+              <span class="badge">IEEE CVPR 2015</span>
+            </div>
+            <h3>UAV Sensor Fusion for Orientation Estimation</h3>
+            <p>Integrated sensor data (cameras, altitude) for real-time estimation, enhancing UAV functionality and establishing foundations for 3D spatial reasoning.</p>
+            <div class="project-tags">
+              <span>Sensor Fusion</span>
+              <span>Computer Vision</span>
+              <span>Python</span>
+              <span>C++</span>
+            </div>
+            <a href="projects/uav-orientation.html" class="project-link">View Project Details →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-cta">
+    <div class="container">
+      <h2>Interested in collaboration?</h2>
+      <p>I'm always open to discussing research ideas, industry applications, or potential collaborations.</p>
+      <a href="contact.html" class="btn primary-btn">Get In Touch</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">RR</div>
+          <p>Ph.D. Candidate in Electrical & Computer Engineering at UCSB, specializing in computer vision and machine learning.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="mailto:raphaelruschel@gmail.com">raphaelruschel@gmail.com</a></p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/raphaelruschel/" target="_blank" class="social-icon">LinkedIn</a>
+            <a href="https://github.com/RRuschel" target="_blank" class="social-icon">GitHub</a>
+            <a href="https://scholar.google.com.br/citations?user=WOWnd8EAAAAJ" target="_blank" class="social-icon">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Raphael Ruschel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple filtering functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          const filter = button.getAttribute('data-filter');
+          
+          projectCards.forEach(card => {
+            if (filter === 'all') {
+              card.style.display = 'block';
+            } else {
+              const categories = card.getAttribute('data-categories');
+              if (categories.includes(filter)) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

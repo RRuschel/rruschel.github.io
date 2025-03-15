@@ -7,67 +7,215 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <nav>
+      <div class="logo">RR</div>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="projects_full.html">Projects</a></li>
-        <li><a href="CV.html">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="hero">
-    <h1>Raphael Ruschel</h1>
-    <p>Computer Vision & Machine Learning Engineer</p>
-    <p class="subtitle">Ph.D. Candidate @ UCSB | Specializing in Scalable AI Solutions</p>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a Ph.D. candidate in Electrical & Computer Engineering at UC Santa Barbara, with over 5 years of experience in computer vision and machine learning. My work focuses on building scalable pipelines for activity tracking, dynamic scene-graph generation, and synthetic datasets using tools like Python, PyTorch, Docker, and Unity Engine. I’ve published in top-tier conferences (CVPR, WACV) and am passionate about applying cutting-edge AI to solve real-world challenges in industry.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Selected Projects</h2>
-    <div class="project-list">
-      <article class="project">
-        <h3><a href="tcdsg.html">Temporally Consistent Dynamic Scene-Graphs</a></h3>
-        <p>Developed an end-to-end framework for action tracklet generation, doubling temporal recall on benchmark datasets like Action Genome using advanced tracking and linking algorithms.</p>
-      </article>
-      <article class="project">
-        <h3><a href="dds.html">Decoupled Dynamic Scene-Graph Network</a></h3>
-        <p>Designed a transformer-based pipeline for compositional Human-Object Interaction detection, achieving 400%+ accuracy improvement in unseen scenarios.</p>
-      </article>
+    <div class="hero-content">
+      <h1>Raphael Ruschel</h1>
+      <h2>Computer Vision & Machine Learning Engineer</h2>
+      <p>Ph.D. Candidate @ UCSB | Specializing in Human-Object Interaction</p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn primary-btn">View Projects</a>
+        <a href="contact.html" class="btn secondary-btn">Get in Touch</a>
+      </div>
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul class="skills-list">
-      <li><strong>Programming:</strong> Python, MATLAB, C++, C#</li>
-      <li><strong>ML & Vision:</strong> PyTorch, scikit-learn, OpenCV</li>
-      <li><strong>Data Science:</strong> Numpy, Pandas, Matplotlib</li>
-      <li><strong>Tools:</strong> Docker, Unity Engine, Git, AWS</li>
-    </ul>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a Computer Vision and Machine Learning expert completing my Ph.D. in Electrical & Computer Engineering at UC Santa Barbara, specializing in dynamic scene-graph generation and human-object interactions.</p>
+          <p>With over 5 years of experience building scalable ML pipelines, transformer-based architectures, and synthetic 3D datasets, I've published in top-tier conferences like CVPR and WACV, consistently pushing the boundaries of what's possible in visual AI.</p>
+          <p>My research focuses on developing algorithms that can understand complex interactions between humans and objects in video, with applications ranging from autonomous systems to augmented reality.</p>
+          <a href="resume.html" class="btn secondary-btn">View My Resume</a>
+        </div>
+        <div class="skills-container">
+          <h3>Technical Skills</h3>
+          <div class="skills-cards">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <h4>Programming</h4>
+                <div class="skill-icon">
+                  <span>&lt;/&gt;</span>
+                </div>
+              </div>
+              <div class="skill-card-content">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">MATLAB</div>
+                <div class="skill-tag">C++</div>
+                <div class="skill-tag">C#</div>
+                <div class="skill-tag">CUDA</div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <h4>ML & Computer Vision</h4>
+                <div class="skill-icon">
+                  <span>ML</span>
+                </div>
+              </div>
+              <div class="skill-card-content">
+                <div class="skill-tag">PyTorch</div>
+                <div class="skill-tag">scikit-learn</div>
+                <div class="skill-tag">OpenCV</div>
+                <div class="skill-tag">Transformers</div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <h4>Data Science</h4>
+                <div class="skill-icon">
+                  <span>DS</span>
+                </div>
+              </div>
+              <div class="skill-card-content">
+                <div class="skill-tag">NumPy</div>
+                <div class="skill-tag">Pandas</div>
+                <div class="skill-tag">Matplotlib</div>
+                <div class="skill-tag">Seaborn</div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <h4>Tools</h4>
+                <div class="skill-icon">
+                  <span>🔧</span>
+                </div>
+              </div>
+              <div class="skill-card-content">
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">Unity Engine</div>
+                <div class="skill-tag">Git</div>
+                <div class="skill-tag">AWS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:raphaelruschel@gmail.com">raphaelruschel@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raphaelruschel/" target="_blank">linkedin.com/in/raphaelruschel</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/RRuschel" target="_blank">github.com/RRuschel</a></p>
+  <section id="featured-projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Temporally Consistent Dynamic Scene Graphs</h3>
+            <p>An end-to-end framework for action tracklet generation achieving 100%+ improvement in temporal recall.</p>
+            <div class="project-tags">
+              <span>Computer Vision</span>
+              <span>Video Analysis</span>
+              <span>PyTorch</span>
+            </div>
+            <a href="projects/tcdsg.html" class="project-link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Decoupled Dynamic Scene-Graph Network</h3>
+            <p>Transformer-based architecture for human-object interaction detection with 400%+ accuracy improvement.</p>
+            <div class="project-tags">
+              <span>Transformers</span>
+              <span>HOI Detection</span>
+              <span>PyTorch</span>
+            </div>
+            <a href="projects/dds.html" class="project-link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Synthetic Dataset Creation</h3>
+            <p>Multi-camera synthetic data generation pipeline using Unity Engine with parametrized human models.</p>
+            <div class="project-tags">
+              <span>Unity Engine</span>
+              <span>3D Modeling</span>
+              <span>Data Generation</span>
+            </div>
+            <a href="projects.html" class="project-link">View More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="container">
+      <h2>Recent Publications</h2>
+      <div class="publications-list">
+        <div class="publication">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <h3>Temporally Consistent Dynamic Scene Graphs: An End-to-End Approach for Action Tracklet Generation</h3>
+            <p>Under Review</p>
+            <a href="projects/tcdsg.html" class="pub-link">View Details</a>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <h3>DDS: Decoupled Dynamic Scene-Graph Generation Network</h3>
+            <p>IEEE/CVF WACV 2025</p>
+            <a href="projects/dds.html" class="pub-link">View Details</a>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="pub-year">2019</div>
+          <div class="pub-content">
+            <h3>Data Conditioning for Facial Spoofing Attacks Detection using Deep Learning</h3>
+            <p>IEEE I2MTC 2019</p>
+          </div>
+        </div>
+      </div>
+      <a href="resume.html#publications" class="btn secondary-btn">View All Publications</a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Raphael Ruschel. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">RR</div>
+          <p>Ph.D. Candidate in Electrical & Computer Engineering at UCSB, specializing in computer vision and machine learning.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="mailto:raphaelruschel@gmail.com">raphaelruschel@gmail.com</a></p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/raphaelruschel/" target="_blank" class="social-icon">LinkedIn</a>
+            <a href="https://github.com/RRuschel" target="_blank" class="social-icon">GitHub</a>
+            <a href="https://scholar.google.com.br/citations?user=WOWnd8EAAAAJ" target="_blank" class="social-icon">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Raphael Ruschel. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

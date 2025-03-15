@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCDSG: Temporally Consistent Dynamic Scene-Graph Generation - Raphael Ruschel</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">RR</div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="project-detail">
+    <div class="container">
+      <div class="project-header">
+        <h1>Temporally Consistent Dynamic Scene-Graph Generation</h1>
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <span class="meta-label">Status</span>
+            <span class="meta-value">Under Review</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="meta-label">Technologies</span>
+            <span class="meta-value">PyTorch, OpenCV, Python</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="meta-label">Year</span>
+            <span class="meta-value">2024-2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-image">
+        <img src="/api/placeholder/1200/600" alt="TCDSG Model Architecture" />
+      </div>
+
+      <div class="project-content">
+        <h2>Project Overview</h2>
+        <p>TCDSG (Temporally Consistent Dynamic Scene Graphs) is an innovative end-to-end framework that detects, tracks, and links subject-object relationships across video sequences, generating action tracklets - temporally consistent sequences of entities and their interactions.</p>
+        
+        <p>Understanding video content is pivotal for advancing real-world applications like activity recognition, autonomous systems, and human-computer interaction. While scene graphs are adept at capturing spatial relationships between objects in individual frames, extending these representations to capture dynamic interactions across video sequences remains a significant challenge.</p>
+
+        <h2>Key Innovations</h2>
+        <ul>
+          <li>Novel bipartite matching mechanism that ensures temporal coherence and robust tracking over extended sequences</li>
+          <li>Adaptive decoder queries and feedback loops that significantly improve tracking performance</li>
+          <li>Pioneered the augmentation of the MEVA dataset with persistent object ID annotations for comprehensive tracklet generation</li>
+          <li>Achieved over 100% improvement in temporal recall on benchmark datasets</li>
+        </ul>
+
+        <h2>Technical Approach</h2>
+        <p>Our approach leverages transformer architectures and Hungarian Matching to maintain identity consistency across video frames. The system consists of three main components:</p>
+        
+        <ol>
+          <li><strong>Feature Extraction:</strong> A backbone network extracts visual features from input video frames.</li>
+          <li><strong>Relationship Detection:</strong> A transformer-based encoder-decoder architecture identifies subject-object pairs and their relationships in each frame.</li>
+          <li><strong>Temporal Linking:</strong> A novel tracking module maintains consistent entity identities and relationships across frames, creating continuous action tracklets.</li>
+        </ol>
+
+        <p>The key to our system's performance is the integration of feedback from previous frames, allowing the model to make more informed predictions by considering the temporal context. This approach not only improves accuracy but also enhances the system's robustness to occlusions and challenging viewing conditions.</p>
+
+        <h2>Results and Impact</h2>
+        <p>We evaluated our system on three benchmark datasets:</p>
+        
+        <ul>
+          <li><strong>Action Genome:</strong> Achieved a 100%+ improvement in temporal recall@k compared to previous methods</li>
+          <li><strong>OpenPVSG:</strong> Demonstrated superior performance in tracking complex human-object interactions in challenging environments</li>
+          <li><strong>MEVA:</strong> Established a new benchmark with our augmented annotations for tracking persistent object IDs</li>
+        </ul>
+
+        <p>Our work sets a new standard in multi-frame video analysis by seamlessly integrating spatial and temporal dynamics. The practical applications of this research extend to surveillance systems, autonomous navigation, assistive technologies, and human-computer interaction.</p>
+
+        <div class="project-links">
+          <a href="https://arxiv.org/pdf/2412.02808" target="_blank" class="project-link-btn paper-link">Read the Paper</a>
+          <a href="https://github.com/RRuschel/tcdsg" target="_blank" class="project-link-btn github-link">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="related-projects">
+    <div class="container">
+      <h2>Related Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Decoupled Dynamic Scene-Graph Network</h3>
+            <p>Transformer-based architecture for human-object interaction detection with 400%+ accuracy improvement.</p>
+            <div class="project-tags">
+              <span>Transformers</span>
+              <span>HOI Detection</span>
+              <span>PyTorch</span>
+            </div>
+            <a href="dds.html" class="project-link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Synthetic Dataset Creation</h3>
+            <p>Multi-camera synthetic data generation pipeline using Unity Engine with parametrized human models.</p>
+            <div class="project-tags">
+              <span>Unity Engine</span>
+              <span>3D Modeling</span>
+              <span>Data Generation</span>
+            </div>
+            <a href="synthetic-dataset.html" class="project-link">View Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">RR</div>
+          <p>Ph.D. Candidate in Electrical & Computer Engineering at UCSB, specializing in computer vision and machine learning.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="mailto:raphaelruschel@gmail.com">raphaelruschel@gmail.com</a></p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/raphaelruschel/" target="_blank" class="social-icon">LinkedIn</a>
+            <a href="https://github.com/RRuschel" target="_blank" class="social-icon">GitHub</a>
+            <a href="https://scholar.google.com.br/citations?user=WOWnd8EAAAAJ" target="_blank" class="social-icon">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Raphael Ruschel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
